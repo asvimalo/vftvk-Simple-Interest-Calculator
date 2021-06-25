@@ -14,7 +14,7 @@ function compute()
     
     var year = new Date().getFullYear() + parseInt(years);
     var result = document.getElementById("result");
-    result.innerHTML = "If you deposit " + amount + "\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+interest+",\<br\>in the year " + year;
+    result.innerHTML = "If you deposit \<span class=\"values\">" + amount+ "\</span\>\<br\>at an interest rate of \<span class=\"values\">"+rate+"\</span\>%\<br\>You will receive an amount of \<span class=\"values\">"+interest+"\</span\>,\<br\>in the year \<span class=\"values\"" + year+ "\</span\>";
 }
 function updateRate(){
     var rateval = document.getElementById("rate").value;
